@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
+
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider, Navigate } from 'react-router-dom'
 import ContactUs from './pages/ContactUs/ContactUs.jsx'
 import Home from './pages/Home/Home.jsx'
@@ -30,4 +31,12 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router} />
   </React.StrictMode>,
+
+import Home from './Component/Home.jsx'
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <Home/>
+  </StrictMode>,
+
 )
